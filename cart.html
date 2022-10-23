@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;family=Kaushan+Script&amp;display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/AppStore_37091.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--start header information -->
+    <header id="your-info ">
+        <div class="info-container">
+            <div class="info-search">
+                <i class="fa fa-search"></i>
+                <input type="text" name="search" placeholder="search">
+            </div>
+            <div class="info-name">
+                <h2>Ahmed Hany</h2>
+            </div>
+            <div class="info-icons">
+                <i class="fa fa-user"></i>
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-shopping-cart"> <sup>2</sup></i>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <!--end header information -->
+    <!--start navigation bar -->
+    <section id="navbar-homepage">
+        <div class="home-container">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">home <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="about.html">about <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="#">catalogus</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--end navebar  -->
+    <!--page title  -->
+    <section id="page-title">
+        <div class="text">
+            <p> <span> Home </span> / cart </p>
+        </div>
+    </section>
+    <!-- end page title  -->
+    <!-- start table cart  -->
+    <section id="cart-table">
+        <div class="cart-table-container">
+            <div class="table">
+                <table border="1px">
+                    <tr class="first-row">
+                        <td>image</td>
+                        <td>product</td>
+                        <td>price</td>
+                        <td>quantity</td>
+                        <td>total</td>
+                        <td>remove</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/cloth_1.jpg" alt="cloth"></td>
+                        <td>
+                            <p> top up t-shirt</p>
+                        </td>
+                        <td>$49.00</td>
+                        <td>
+                            <div class="input-number">
+                                <div class="number-input">
+                                    <button
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                        class="plus"></button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$49.00</td>
+                        <td><button class="cancel" type="submit">X </button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/cloth_2.jpg" alt="cloth"></td>
+                        <td>
+                            <p>polo shirt</p>
+                        </td>
+                        <td>$45.00</td>
+                        <td>
+                            <div class="input-number">
+                                <div class="number-input">
+                                    <button
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                        class="plus"></button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$45.00</td>
+                        <td><button class="cancel" type="submit">X </button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buttom">
+                <div class="left-side-table">
+                    <button class="active" type="submit">update cart</button>
+                    <button class="un-active" type="submit">continue shopping</button><br><br>
+                    <h3>coupon</h3>
+                    <p>enter your coupon code if you have one . </p><br>
+                    <input type="text" placeholder="coupon code ">
+                    <button class="code" type="submit">apply coupon</button>
+                </div>
+                <div class="right-side-table">
+                    <h1>cart totals</h1>
+                    <hr>
+                    <div class="total-text-container">
+                        <div class="left-total">
+                            <p>subtotal</p>
+                            <p>total</p>
+                        </div>
+                        <div class="right-total">
+                            <p>$230.00</p>
+                            <p>$230.00</p>
+                        </div>
+                    </div>
+                    <a href="checkout.html"> <button type="submit">proceed to checkout </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- end table cart  -->
+    <!--start footer section -->
+    <footer id="footer-homepage">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="info">
+                    <h1>Navigation</h1>
+                    <p>sell online</p>
+                    <p>shopping cart</p>
+                    <p>store builder </p>
+                </div>
+                <div class="info select">
+                    <p>mobile commerce</p>
+                    <p>dropshipping</p>
+                    <p>website development</p>
+                </div>
+                <div class="info select">
+                    <p>point of sale </p>
+                    <p>hardware</p>
+                    <p>software</p>
+                </div>
+                <div class="info">
+                    <h1>promo</h1>
+                    <img src="images/panner imag.jpg" alt="promo"><br>
+                    <a href="#">finding your perfect shoes</a>
+                    <p>promo from nuary 15-25,2019</p>
+                </div>
+                <div class="info">
+                    <h1>contact info </h1>
+                    <p><i class="fa fa-map-marker"></i> 203 fake st, mountain view, san <br> francisco, caliornia ,usa
+                    </p>
+                    <p><i class="fa fa-phone"></i> +2 392 3929 210</p>
+                    <p><i class="fa fa-envelope"></i> ahmedhany@gmail.com</p>
+                    <br>
+                    <p>subscribe</p>
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Email">
+                        <button type="submit">SEND </button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="copyright">
+                <p> copyright 2022 all rights reserved/ this template is made with <i class="fa fa-heart"></i> by <span>
+                        AHMED HANY</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--end footer section -->
+    </body>
+
+</html>
